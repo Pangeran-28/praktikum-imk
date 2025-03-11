@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Keren</title>
+    <title>Toko Musik Keren</title>
     <style>
         * {
             margin: 0;
@@ -33,6 +33,25 @@
             font-size: 1.2em;
             margin-bottom: 20px;
         }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .item img {
+            width: 80px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .item-info {
+            flex: 1;
+            text-align: left;
+            padding-left: 15px;
+        }
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -49,9 +68,36 @@
 </head>
 <body>
     <div class="container">
-        <h1>Selamat Datang di Website Keren</h1>
-        <p>Website statis yang dibuat dengan kreativitas tinggi! Jelajahi dan nikmati desainnya.</p>
-        <a href="#" class="btn">Jelajahi</a>
+        <h1>Toko Musik Keren</h1>
+        <p>Temukan berbagai alat musik dengan harga terbaik!</p>
+        
+        <div class="item">
+            <img src="https://via.placeholder.com/80" alt="Gitar Akustik">
+            <div class="item-info">
+                <h3>Gitar Akustik</h3>
+                <p>Rp1.500.000</p>
+            </div>
+            <a href="#" class="btn">Beli</a>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/80" alt="Keyboard Yamaha">
+            <div class="item-info">
+                <h3>Keyboard Yamaha</h3>
+                <p>Rp3.200.000</p>
+            </div>
+            <a href="#" class="btn">Beli</a>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/80" alt="Drum Set Pearl">
+            <div class="item-info">
+                <h3>Drum Set Pearl</h3>
+                <p>Rp7.800.000</p>
+            </div>
+            <a href="#" class="btn">Beli</a>
+        </div>
     </div>
 </body>
 </html>
+
