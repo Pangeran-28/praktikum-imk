@@ -3,101 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Musik Keren</title>
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         body {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: linear-gradient(135deg, #0072ff, #00c6ff);
             color: white;
             text-align: center;
-            padding: 50px;
+            overflow-x: hidden;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile img {
+            width: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-top: 20px;
         }
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            margin-top: 20px;
+            font-size: 2.8em;
+            font-weight: bold;
         }
-        p {
+        .bio {
+            margin: 20px 0;
             font-size: 1.2em;
-            margin-bottom: 20px;
+            font-style: italic;
         }
-        .item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
+        .social-links {
+            margin: 20px 0;
         }
-        .item img {
-            width: 80px;
-            height: auto;
-            border-radius: 5px;
-        }
-        .item-info {
-            flex: 1;
-            text-align: left;
-            padding-left: 15px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #ff9800;
+        .social-links a {
             color: white;
+            font-size: 1.8em;
+            margin: 15px;
             text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
+            transition: transform 0.3s, color 0.3s;
         }
-        .btn:hover {
-            background: #e68900;
+        .social-links a:hover {
+            transform: scale(1.3);
+            color: #b3e0ff;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.2em;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Toko Musik Keren</h1>
-        <p>Temukan berbagai alat musik dengan harga terbaik!</p>
-        
-        <div class="item">
-            <img src="https://via.placeholder.com/80" alt="Gitar Akustik">
-            <div class="item-info">
-                <h3>Gitar Akustik</h3>
-                <p>Rp1.500.000</p>
-            </div>
-            <a href="#" class="btn">Beli</a>
+        <div class="profile">
+            <img src="WhatsApp Image 2025-03-05 at 08.47.43_8068e405.jpg" alt="Profile Picture">
+            <h1>Pangeran Rae Ebenezer Siahaan</h1>
+            <p class="bio">Saya seorang mahasiswa USU jurusan Teknologi Informasi. Saya ingin mempelajari lebih dalam menjadi seorang back-end developer. Saya juga memiliki hobby bermain musik.</p>
         </div>
-
-        <div class="item">
-            <img src="https://via.placeholder.com/80" alt="Keyboard Yamaha">
-            <div class="item-info">
-                <h3>Keyboard Yamaha</h3>
-                <p>Rp3.200.000</p>
-            </div>
-            <a href="#" class="btn">Beli</a>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
-
-        <div class="item">
-            <img src="https://via.placeholder.com/80" alt="Drum Set Pearl">
-            <div class="item-info">
-                <h3>Drum Set Pearl</h3>
-                <p>Rp7.800.000</p>
+        <div class="contact-info">
+            <p>Instagram: @pangekle</p>
+            <p>WhatsApp: +62 821-2530-3452</p>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <h3>Proyek 1</h3>
+                <p></p>
             </div>
-            <a href="#" class="btn">Beli</a>
+            <div class="project">
+                <h3>Proyek 2</h3>
+                <p></p>
+            </div>
+            <div class="project">
+                <h3>Proyek 3</h3>
+                <p></p>
+            </div>
         </div>
     </div>
 </body>
 </html>
+
 
